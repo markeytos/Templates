@@ -1,0 +1,27 @@
+;----------------- request.inf -----------------
+
+[Version]
+Signature="$Windows NT$"
+
+[NewRequest]
+Subject = "$SUBJECTNAME$"
+
+$KEYINFO$
+Exportable = TRUE
+MachineKeySet = FALSE
+SMIME = False
+PrivateKeyArchive = FALSE
+UserProtected = FALSE
+UseExistingKeySet = FALSE
+ProviderName = "$PROIVIDER"
+ProviderType = 12
+RequestType = PKCS10
+KeyUsage = $KEYUSAGE$
+HashAlgorithm = $HASHINGALGO$
+
+[Extensions]
+2.5.29.17="{text}$SANS$"
+
+[EnhancedKeyUsageExtension]
+$EKUS$
+;-----------------------------------------------
