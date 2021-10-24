@@ -13,14 +13,13 @@ SMIME = False
 PrivateKeyArchive = FALSE
 UserProtected = FALSE
 UseExistingKeySet = FALSE
-ProviderName = "$PROIVIDER"
+ProviderName = "$PROIVIDER$"
 ProviderType = 12
 RequestType = PKCS10
 KeyUsage = $KEYUSAGE$
 HashAlgorithm = $HASHINGALGO$
 
-[Extensions]
-2.5.29.17="{text}$SANS$"
+$EXTENSIONS$
 
 [EnhancedKeyUsageExtension]
 $EKUS$
